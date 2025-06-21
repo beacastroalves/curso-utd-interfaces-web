@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Produtos</title>
+  <link rel="stylesheet" href="./cadastro.css">
+</head>
+<body>
+  <div class="formulario">
+    <div class="item">
+      <input type="text" name="codigo" id="codigo" placeholder="Código do Produto">
+    </div>
+    <div class="item">
+      <input type="text" name="nome" id="nome" placeholder="Nome">
+    </div>
+    <div class="item">
+      <input type="text" name="preco" id="preco" placeholder="Preço">
+    </div>
+    <div class="item">
+      <input type="text" name="tipo" id="tipo" placeholder="Tipo">
+    </div>
+    <button id="cadastro">Cadastrar Produto</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody id="lista">
+
+    </tbody>
+  </table>
+
+  <script src="./servico.js" type="module"></script>
+</body>
+</html>

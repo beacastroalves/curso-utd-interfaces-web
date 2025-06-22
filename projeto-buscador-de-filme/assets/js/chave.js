@@ -1,0 +1,1 @@
+export const chave = 'a4d152e9';

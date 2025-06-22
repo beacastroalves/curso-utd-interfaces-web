@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+main {
+  padding: 0;
+  margin: 0 auto;
+
+  #content {
+    margin: 0 auto;
+    padding: 24px;
+    background-color: white;
+    display: flex;
+
+    input {
+      font-size: 1em;
+      padding: 8px;
+      border: 2px solid #8e0000;
+      border-right: transparent;
+      width: 100%;
+      flex: 3;
+
+      &:focus {
+        outline: 1px solid #ff8d8d;
+      }
+    }
+
+    button {
+      padding: 8px;
+      font-size: 1em;
+      border: 2px solid #8e0000;
+      background-color: #8e0000;
+      color: white;
+      height: 100%;
+      flex: 1;
+
+      &:hover {
+        background-color: #991e1e;
+      }
+
+      &:active {
+        background-color: #760101;
+        transform: translate(1px, 1px);
+      }
+    }
+  }
+
+  #painel {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    #painel-text {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-width: 300px;
+      margin-bottom: 16px;
+
+      h1 {
+        width: fit-content;
+        margin: 8px auto;
+      }
+    }
+
+    #poster {
+      margin: 0 auto;
+      padding-bottom: 16px;
+
+      img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  body {
+    background-color: #000000;
+  }
+
+  main {
+    padding: 16px;
+    margin: 0 auto;
+    width: 90%;
+
+    #content {
+      margin-bottom: 16px;
+      border-radius: 8px;
+      max-width: 700px;
+    }
+
+    #painel {
+      border-radius: 8px;
+
+      #painel-text {
+        padding: 16px;
+        margin-bottom: 0;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  main {
+    padding: 16px;
+
+    #content {
+      margin-bottom: 16px;
+      border-radius: 8px;
+      flex: 1;
+    }
+
+    #painel {
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      border-radius: 8px;
+      padding-top: 16px;
+      height: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+
+      #painel-text {
+        margin: 0;
+        padding: 16px;
+        margin-bottom: 0;
+        align-self: flex-start;
+
+        h1 {
+          margin: 0;
+        }
+      }
+
+      #poster {
+      margin: 0;
+      padding-bottom: 16px;
+
+      img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+    }
+  }
+}

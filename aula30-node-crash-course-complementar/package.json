@@ -1,0 +1,15 @@
+{
+  "name": "aula30-node-crash-course-complementar",
+  "version": "1.0.0",
+  "description": "Node.js crash course code",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --env-file=.env server.js"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

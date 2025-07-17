@@ -1,0 +1,33 @@
+#navegacao {
+  width: 100%;
+  height: 80px;
+  padding: 8px 32px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #555;
+  color: #232323;
+}
+
+#navegacao > h1 {
+  font-size: 2rem;
+}
+
+#navegacao > ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+#navegacao > ul > li > a {
+  text-decoration: none;
+  color: #232323;
+  font-weight: bold;
+}
+
+#navegacao > ul > li:hover {
+  transform: scale(1.08);
+  color: #535353;
+  transition: transform 0.25s;
+}
